@@ -10,7 +10,7 @@ return {
 	assets: new Set([]),
 	mimeTypes: {},
 	_: {
-		client: {"start":"_app/immutable/entry/start.CvJLccAI.js","app":"_app/immutable/entry/app.Fr9lU697.js","imports":["_app/immutable/entry/start.CvJLccAI.js","_app/immutable/chunks/entry.YIi9MnFq.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/entry/app.Fr9lU697.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/chunks/index.CX1coe_r.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.K6jGepA6.js","app":"_app/immutable/entry/app.BB6O4iVW.js","imports":["_app/immutable/entry/start.K6jGepA6.js","_app/immutable/chunks/entry.C_Yr-1J6.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/entry/app.BB6O4iVW.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/chunks/index.Bcd4Swig.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -39,6 +39,13 @@ return {
 				params: [],
 				page: { layouts: [0,], errors: [1,], leaf: 4 },
 				endpoint: null
+			},
+			{
+				id: "/api/stocks/[symbol]",
+				pattern: /^\/api\/stocks\/([^/]+?)\/?$/,
+				params: [{"name":"symbol","optional":false,"rest":false,"chained":false}],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/api/stocks/_symbol_/_server.js'))
 			}
 		],
 		matchers: async () => {
