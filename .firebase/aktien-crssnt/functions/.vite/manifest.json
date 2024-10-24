@@ -8,10 +8,6 @@
       "_internal.js"
     ]
   },
-  "__page.svelte_svelte_type_style_lang.js": {
-    "file": "_app/immutable/assets/_page.ga53zvmt.css",
-    "src": "__page.svelte_svelte_type_style_lang.js"
-  },
   "_exports.js": {
     "file": "chunks/exports.js",
     "name": "exports"
@@ -64,11 +60,11 @@
     "isEntry": true,
     "imports": [
       "_ssr.js",
-      "src/routes/DataList/+page.svelte"
+      "src/routes/DataList/+page.svelte",
+      "src/routes/StatCard/+page.svelte"
     ],
     "css": [
-      "_app/immutable/assets/_page.DEuASuya.css",
-      "_app/immutable/assets/_page.ga53zvmt.css"
+      "_app/immutable/assets/_page.DXDWjK2t.css"
     ]
   },
   "src/routes/DataList/+page.svelte": {
@@ -78,6 +74,9 @@
     "isEntry": true,
     "imports": [
       "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CgOuPXJI.css"
     ]
   },
   "src/routes/StatCard/+page.svelte": {
@@ -89,7 +88,13 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.ga53zvmt.css"
+      "_app/immutable/assets/_page.94H4zDEK.css"
     ]
+  },
+  "src/routes/api/stocks/[symbol]/+server.js": {
+    "file": "entries/endpoints/api/stocks/_symbol_/_server.js",
+    "name": "entries/endpoints/api/stocks/_symbol_/_server",
+    "src": "src/routes/api/stocks/[symbol]/+server.js",
+    "isEntry": true
   }
 }
