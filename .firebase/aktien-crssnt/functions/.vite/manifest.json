@@ -60,41 +60,47 @@
     "isEntry": true,
     "imports": [
       "_ssr.js",
-      "src/routes/DataList/+page.svelte",
-      "src/routes/StatCard/+page.svelte"
+      "src/routes/components/DataList/+page.svelte",
+      "src/routes/components/StatCard/+page.svelte"
     ],
     "css": [
-      "_app/immutable/assets/_page.DXDWjK2t.css"
+      "_app/immutable/assets/_page.j3VLFx7M.css"
     ]
   },
-  "src/routes/DataList/+page.svelte": {
-    "file": "entries/pages/DataList/_page.svelte.js",
-    "name": "entries/pages/DataList/_page.svelte",
-    "src": "src/routes/DataList/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_ssr.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.CgOuPXJI.css"
-    ]
-  },
-  "src/routes/StatCard/+page.svelte": {
-    "file": "entries/pages/StatCard/_page.svelte.js",
-    "name": "entries/pages/StatCard/_page.svelte",
-    "src": "src/routes/StatCard/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_ssr.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.94H4zDEK.css"
-    ]
+  "src/routes/api/rss/[...feed]/+server.js": {
+    "file": "entries/endpoints/api/rss/_...feed_/_server.js",
+    "name": "entries/endpoints/api/rss/_...feed_/_server",
+    "src": "src/routes/api/rss/[...feed]/+server.js",
+    "isEntry": true
   },
   "src/routes/api/stocks/[symbol]/+server.js": {
     "file": "entries/endpoints/api/stocks/_symbol_/_server.js",
     "name": "entries/endpoints/api/stocks/_symbol_/_server",
     "src": "src/routes/api/stocks/[symbol]/+server.js",
     "isEntry": true
+  },
+  "src/routes/components/DataList/+page.svelte": {
+    "file": "entries/pages/components/DataList/_page.svelte.js",
+    "name": "entries/pages/components/DataList/_page.svelte",
+    "src": "src/routes/components/DataList/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DV6JILv0.css"
+    ]
+  },
+  "src/routes/components/StatCard/+page.svelte": {
+    "file": "entries/pages/components/StatCard/_page.svelte.js",
+    "name": "entries/pages/components/StatCard/_page.svelte",
+    "src": "src/routes/components/StatCard/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.0NyJTdo6.css"
+    ]
   }
 }

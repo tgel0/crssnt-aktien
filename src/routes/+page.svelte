@@ -1,39 +1,58 @@
 <script>
-  import DataList from "./DataList/+page.svelte";
-  import StatCard from "./StatCard/+page.svelte";
+  import DataList from "./components/DataList/+page.svelte";
+  import StatCard from "./components/StatCard/+page.svelte";
 
-  // export let data;
-  // console.log(data)
 </script>
 
 <div class="page-container">
 
   <div class="stocks-grid">
-    <StatCard title="DAX" symbol="%5EGDAXI" />
-    <StatCard title="NASDAQ" symbol="%5EIXIC" />
-    <StatCard title="S&P500" symbol="%5EGSPC" />
-    <StatCard title="ESTX50" symbol="^STOXX50E" />
+    <StatCard title="DAX" symbol="dax" />
+    <StatCard title="NASDAQ" symbol="nasdaq" />
+    <StatCard title="S&P500" symbol="sp500" />
+    <StatCard title="EUROSTX50" symbol="eurostoxx50" />
+    <StatCard title="DOW JONES" symbol="dowjones" />
 
   </div>
 
-  <div class="news-grid">
-    <DataList title="💵 EUR/USD" feedURL="https://www.ecb.europa.eu/rss/fxref-usd.html" numberOfItems="1" length="30"/>
-    <DataList title="💷 EUR/GBP" feedURL="https://www.ecb.europa.eu/rss/fxref-gbp.html" numberOfItems="1" length="30"/>
-    <DataList title="💴 EUR/JPY" feedURL="https://www.ecb.europa.eu/rss/fxref-jpy.html" numberOfItems="1" length="30"/>
+  <div class="stocks-grid">
+    <StatCard title="EUR/USD" symbol="eurusd" />
+    <StatCard title="EUR/GBP" symbol="eurgbp" />
+    <StatCard title="EUR/JPY" symbol="eurjpy" />
+    <StatCard title="EUR/BTC" symbol="btceur" />
+    <StatCard title="GOLD(USD)" symbol="gold" />
+  </div>
 
-    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten/"/>
+  <div class="news-grid">
+    <!-- <DataList title="💵 EUR/USD" feedURL="https://www.ecb.europa.eu/rss/fxref-usd.html" numberOfItems="1" length="30"/>
+    <DataList title="💷 EUR/GBP" feedURL="https://www.ecb.europa.eu/rss/fxref-gbp.html" numberOfItems="1" length="30"/>
+    <DataList title="💴 EUR/JPY" feedURL="https://www.ecb.europa.eu/rss/fxref-jpy.html" numberOfItems="1" length="30"/> -->
+
+    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten"/>
     <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml"/>
     <DataList title="DER AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>
 
-
+    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
     <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml"/>
-    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"/>
-    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen"/>
+    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="12"/>
 
-    
+
+    <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss"/>
+    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard"/>
     <DataList title="HANDELSBLATT" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen"/>
+
+
+    <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="7"/>
+    <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="7"/>
+    <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="7"/>    
+
+    <DataList title="R/AKTIEN" feedURL="https://www.reddit.com/r/Aktien/new.rss"/>
+    <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
+        
+    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"/>
     <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen/finanzmarkt"/>
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen"/>
+
 
     <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
 
@@ -64,6 +83,16 @@
     padding: 1rem;
   }
 
+  /* Hide scrollbar for Chrome/Safari/Opera */
+  .stocks-grid::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* Prevent StatCards from shrinking */
+  :global(.stocks-grid > *) {
+    flex: 0 0 250px; /* Don't grow, don't shrink, fixed width */
+}
+
   .news-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -80,17 +109,46 @@
     color: #666; 
   }
 
-  @media (max-width: 1024px) {
-    .page-container {
-      padding: 1rem;
+  @media (max-width: 900px) {
+    .news-grid {
+      grid-template-columns: 1fr;
+      gap: 0;
     }
   }
 
-  @media (max-width: 768px) {
-    .news-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
+  @media (max-width: 900px) {
+  .stocks-grid {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    /* Hide scrollbar for cleaner look but maintain functionality */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer/Edge */
   }
+  
+  /* Hide scrollbar for Chrome/Safari */
+  .stocks-grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Prevent content from wrapping */
+  .stocks-grid > :global(*) {
+    flex: 0 0 250px; /* Don't grow, don't shrink, fixed width */
+  }
+
+  .stocks-grid > :global(*:first-child) {
+    margin-left: 0;
+  }
+  
+  .stocks-grid > :global(*:last-child) {
+    margin-right: 0;
+  }
+  .page-container {
+    padding: 0;
+  }
+}
 
 </style>
