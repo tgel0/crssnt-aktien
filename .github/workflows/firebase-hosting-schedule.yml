@@ -31,4 +31,5 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
           firebase use crssnt-prod
+          firebase experiments:enable webframeworks
           firebase deploy --only hosting:aktien-crssnt
