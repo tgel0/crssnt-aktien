@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set([]),
-	mimeTypes: {},
+	assets: new Set(["error.html"]),
+	mimeTypes: {".html":"text/html"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.K6jGepA6.js","app":"_app/immutable/entry/app.BB6O4iVW.js","imports":["_app/immutable/entry/start.K6jGepA6.js","_app/immutable/chunks/entry.C_Yr-1J6.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/entry/app.BB6O4iVW.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/chunks/index.Bcd4Swig.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.KME_RdRv.js","app":"_app/immutable/entry/app.B-HFi9sv.js","imports":["_app/immutable/entry/start.KME_RdRv.js","_app/immutable/chunks/entry.C1-jt-Ik.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/entry/app.B-HFi9sv.js","_app/immutable/chunks/scheduler.BvLojk_z.js","_app/immutable/chunks/index.Bcd4Swig.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -27,18 +27,11 @@ return {
 				endpoint: null
 			},
 			{
-				id: "/DataList",
-				pattern: /^\/DataList\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 3 },
-				endpoint: null
-			},
-			{
-				id: "/StatCard",
-				pattern: /^\/StatCard\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 4 },
-				endpoint: null
+				id: "/api/rss/[...feed]",
+				pattern: /^\/api\/rss(?:\/(.*))?\/?$/,
+				params: [{"name":"feed","optional":false,"rest":true,"chained":true}],
+				page: null,
+				endpoint: __memo(() => import('./entries/endpoints/api/rss/_...feed_/_server.js'))
 			},
 			{
 				id: "/api/stocks/[symbol]",
@@ -46,6 +39,20 @@ return {
 				params: [{"name":"symbol","optional":false,"rest":false,"chained":false}],
 				page: null,
 				endpoint: __memo(() => import('./entries/endpoints/api/stocks/_symbol_/_server.js'))
+			},
+			{
+				id: "/components/DataList",
+				pattern: /^\/components\/DataList\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 3 },
+				endpoint: null
+			},
+			{
+				id: "/components/StatCard",
+				pattern: /^\/components\/StatCard\/?$/,
+				params: [],
+				page: { layouts: [0,], errors: [1,], leaf: 4 },
+				endpoint: null
 			}
 		],
 		matchers: async () => {

@@ -1,8 +1,13 @@
+export const prerender = true;
+
 export async function GET({ params }) {
+
     const { symbol } = params;
     
     try {
-      const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}`);
+
+      const response = await fetch(`https://us-central1-crssnt-test-1603789358418.cloudfunctions.net/crssntFeedParser/stocks/${symbol}`);
+      
       const data = await response.json();
       
       return new Response(JSON.stringify(data), {
