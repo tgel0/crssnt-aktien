@@ -67,12 +67,13 @@
     <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
     <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss"/>
         
-    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"/>
+
+    <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen/finanzmarkt"/>
     <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss"/>
     <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"/>
 
 
-    <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen/finanzmarkt"/>
+    <DataList title="IT TIMES" feedURL="https://www.it-times.de/tag/it-news/rss.xml"/>
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen"/>
     <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
 

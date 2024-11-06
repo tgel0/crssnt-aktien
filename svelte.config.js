@@ -42,7 +42,12 @@ const config = {
 				'/api/rss/https://api.boerse-frankfurt.de/v1/feeds/news.rss',
 				'/api/rss/https://www.boersia.de/feed/atom',				
 				'/api/rss/https://feeds.megaphone.fm/FGH8365603623',
-				'/api/rss/https://www.reddit.com/r/Aktien/new.rss'
+				'/api/rss/https://www.reddit.com/r/Aktien/new.rss',
+				'/api/rss/https://de.investing.com/rss/news.rss',
+				'/api/rss/https://www.n-tv.de/wirtschaft/rss',
+				'/api/rss/https://www.it-times.de/tag/it-news/rss.xml'
+
+
             ],
 			handleMissingId: 'ignore',
 			handleHttpError: ({ path, referrer, message }) => {
