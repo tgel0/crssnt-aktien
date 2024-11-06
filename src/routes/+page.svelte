@@ -2,9 +2,25 @@
   import DataList from "./components/DataList/+page.svelte";
   import StatCard from "./components/StatCard/+page.svelte";
 
+  export let data;
+  
+  // Function to format the timestamp
+  function formatBuildTime(isoString) {
+    const date = new Date(isoString);
+    return new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'medium',
+      timeStyle: 'medium'
+    }).format(date);
+  }
+
 </script>
 
 <div class="page-container">
+
+  <div class="update-info">
+    <p>Letzte Aktualisierung: {formatBuildTime(data.buildTime)}</p>
+  </div>
+
 
   <div class="stocks-grid">
     <StatCard title="DAX" symbol="dax" />
@@ -29,10 +45,11 @@
     <DataList title="💴 EUR/JPY" feedURL="https://www.ecb.europa.eu/rss/fxref-jpy.html" numberOfItems="1" length="30"/> -->
 
     <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten"/>
-    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml"/>
+    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
     <DataList title="DER AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>
 
-    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
+
+    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml"/>
     <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml"/>
     <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="12"/>
 
@@ -48,12 +65,15 @@
 
     <DataList title="R/AKTIEN" feedURL="https://www.reddit.com/r/Aktien/new.rss"/>
     <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
+    <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss"/>
         
     <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"/>
+    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss"/>
+    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"/>
+
+
     <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen/finanzmarkt"/>
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen"/>
-
-
     <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
 
     
@@ -74,6 +94,11 @@
     margin: 0 auto;
     padding: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  }
+
+  .update-info {
+    text-align: center; 
+    margin-top: 20px; 
   }
 
   .stocks-grid {
@@ -104,7 +129,7 @@
     margin-top: 20px; 
   }
 
-  .contact-info {
+  p {
     font-size: 0.8em; 
     color: #666; 
   }

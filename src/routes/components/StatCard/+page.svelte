@@ -72,7 +72,6 @@
     min-width: 5rem;
     max-width: 1rem;  /* Fixed width for mobile */
   }
-
   .price, 
   .change {
     text-align: left; /* Align text to the left */
