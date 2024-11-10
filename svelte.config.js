@@ -37,7 +37,7 @@ const config = {
 				'/api/rss/https://feeds.megaphone.fm/PDS3666998460',
 				'/api/rss/https://www.reddit.com/r/Aktien/new.rss',
 				'/api/rss/https://rss.sueddeutsche.de/rss/Wirtschaft',
-				'/api/rss/https://www.faz.net/rss/aktuell/finanzen/finanzmarkt',
+				'/api/rss/https://www.faz.net/rss/aktuell/finanzen',
 				'/api/rss/https://www.wiwo.de/contentexport/feed/rss/finanzen',
 				'/api/rss/https://api.boerse-frankfurt.de/v1/feeds/news.rss',
 				'/api/rss/https://www.boersia.de/feed/atom',				
@@ -45,7 +45,8 @@ const config = {
 				'/api/rss/https://www.reddit.com/r/Aktien/new.rss',
 				'/api/rss/https://de.investing.com/rss/news.rss',
 				'/api/rss/https://www.n-tv.de/wirtschaft/rss',
-				'/api/rss/https://www.it-times.de/tag/it-news/rss.xml'
+				'/api/rss/https://www.it-times.de/tag/it-news/rss.xml',
+				'/api/rss/https://www.ntg24.de/rssfeed.xml'
 
 
             ],

@@ -1,12 +1,12 @@
 export const prerender = true;
 
-export async function GET({ params }) {
+export async function GET({ params, url }) {
     
     const feedUrl = params.feed;
-    // const numberOfItems = url.searchParams.get('numberOfItems');
+    const numberOfItems = url.searchParams.get('numberOfItems');
     
     try {
-      const response = await fetch(`https://us-central1-crssnt-test-1603789358418.cloudfunctions.net/crssntFeedParser/rss/${feedUrl}?numberOfItems=10`);
+      const response = await fetch(`https://us-central1-crssnt-test-1603789358418.cloudfunctions.net/crssntFeedParser/rss/${feedUrl}?numberOfItems=${numberOfItems}`);
       
       const data = await response.json();
       

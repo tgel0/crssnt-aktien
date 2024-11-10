@@ -44,41 +44,40 @@
     <DataList title="💷 EUR/GBP" feedURL="https://www.ecb.europa.eu/rss/fxref-gbp.html" numberOfItems="1" length="30"/>
     <DataList title="💴 EUR/JPY" feedURL="https://www.ecb.europa.eu/rss/fxref-jpy.html" numberOfItems="1" length="30"/> -->
 
-    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten"/>
-    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
-    <DataList title="DER AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>
 
+    <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml" numberOfItems="7"/>
+    <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
+    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="7"/>
 
-    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml"/>
-    <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml"/>
-    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="12"/>
+    <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="7"/>
+    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="6"/>
+    <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen" numberOfItems="6"/>
 
+    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="6"/>
+    <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="6"/>
+    <DataList title="HANDELSBLATT" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="6"/>
 
-    <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss"/>
-    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard"/>
-    <DataList title="HANDELSBLATT" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen"/>
+    <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="5"/>
+    <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="5"/>
+    <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="7"/>  
 
-
-    <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="7"/>
-    <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="7"/>
-    <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="7"/>    
+    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="14"/>
+    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" />
+    <DataList title="DER AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>  
 
     <DataList title="R/AKTIEN" feedURL="https://www.reddit.com/r/Aktien/new.rss"/>
-    <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
-    <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss"/>
+    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
+    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml" numberOfItems="8"/>
+
         
-
-    <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen/finanzmarkt"/>
-    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss"/>
-    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"/>
-
-
     <DataList title="IT TIMES" feedURL="https://www.it-times.de/tag/it-news/rss.xml"/>
-    <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen"/>
+    <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
+    <DataList title="NTG24" feedURL="https://www.ntg24.de/rssfeed.xml" numberOfItems="7"/>
+
     <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
 
-    
     <!-- <DataList title="FINANZEN.NET" feedURL="https://www.finanzen.net/rss/news"/> -->
+    <!-- <DataList title="XETRA" feedURL="https://www.xetra.com/xetra-de/newsroom/80642!listFeed"/> -->
   </div>
 
   <footer>

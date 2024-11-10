@@ -9,7 +9,7 @@
 
   const fetchDataList = async () => {
     try {
-      const response = await fetch(`/api/rss/${feedURL}`);
+      const response = await fetch(`/api/rss/${feedURL}?numberOfItems=${numberOfItems}`);
       const jsonData = await response.json();
       data = jsonData.items.slice(0, numberOfItems);
     } catch (error) {
@@ -34,7 +34,7 @@
     {#each data as item}
     <li>
       <a href={item.link} target="_blank" rel="noopener noreferrer"> 
-        {truncateText(item.title, length)} <!-- - {truncateText(item.description)} -->
+        {item.title} <!-- {truncateText(item.title, length)}  - {truncateText(item.description)} -->
       </a>
     </li>
     {/each}
