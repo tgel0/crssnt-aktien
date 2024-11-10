@@ -9,7 +9,7 @@
 
   const fetchDataList = async () => {
     try {
-      const response = await fetch(`/api/rss/${feedURL}?numberOfItems=${numberOfItems}`);
+      const response = await fetch(`/api/rss/${feedURL}`);
       const jsonData = await response.json();
       data = jsonData.items.slice(0, numberOfItems);
     } catch (error) {
