@@ -28,7 +28,6 @@
     <StatCard title="S&P500" symbol="sp500" />
     <StatCard title="EUROSTX50" symbol="eurostoxx50" />
     <StatCard title="DOW JONES" symbol="dowjones" />
-
   </div>
 
   <div class="stocks-grid">
@@ -47,13 +46,13 @@
 
     <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml" numberOfItems="7"/>
     <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
-    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="7"/>
+    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="6"/>
 
     <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="7"/>
     <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="6"/>
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen" numberOfItems="6"/>
 
-    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="6"/>
+    <DataList title="SPIEGEL" feedURL="https://www.spiegel.de/wirtschaft/unternehmen/index.rss" numberOfItems="6"/>
     <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="6"/>
     <DataList title="HANDELSBLATT" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="6"/>
 
@@ -61,19 +60,20 @@
     <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="5"/>
     <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="7"/>  
 
-    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="14"/>
-    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" />
-    <DataList title="DER AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>  
+    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="12"/>
+    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="16"/>
+    <DataList title="DER AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>
+
+    <DataList title="BÖRSE GLOBAL" feedURL="https://www.boerse-global.de/feed" />
+    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
+    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" numberOfItems="9" />
 
     <DataList title="R/AKTIEN" feedURL="https://www.reddit.com/r/Aktien/new.rss"/>
-    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
     <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml" numberOfItems="8"/>
-
+    <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
         
     <DataList title="IT TIMES" feedURL="https://www.it-times.de/tag/it-news/rss.xml"/>
-    <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
-    <DataList title="NTG24" feedURL="https://www.ntg24.de/rssfeed.xml" numberOfItems="7"/>
-
+    <DataList title="NTG24" feedURL="https://www.ntg24.de/rssfeed.xml" numberOfItems="6"/>
     <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
 
     <!-- <DataList title="FINANZEN.NET" feedURL="https://www.finanzen.net/rss/news"/> -->
@@ -82,7 +82,8 @@
 
   <footer>
     <p class="contact-info">
-      ✉️ <a href="mailto:tomi@crssnt.com">tomi@crssnt.com</a>
+      <!-- ✉️ <a href="mailto:tomi@crssnt.com">tomi@crssnt.com</a> -->
+      <a href="/legal">Datenschutz und Impressum</a>
     </p>
   </footer>
 </div>
@@ -92,13 +93,12 @@
   .page-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0rem;
     font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
 
   .update-info {
-    text-align: center; 
-    margin-top: 20px; 
+    text-align: center;
   }
 
   .stocks-grid {
@@ -122,6 +122,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
+    padding: 2rem 0;
   }
 
   footer {

@@ -68,7 +68,7 @@
   }
 
   a {
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 0.95rem;
     line-height: 1.2;

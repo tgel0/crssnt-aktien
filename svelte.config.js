@@ -46,7 +46,9 @@ const config = {
 				'/api/rss/https://de.investing.com/rss/news.rss',
 				'/api/rss/https://www.n-tv.de/wirtschaft/rss',
 				'/api/rss/https://www.it-times.de/tag/it-news/rss.xml',
-				'/api/rss/https://www.ntg24.de/rssfeed.xml'
+				'/api/rss/https://www.ntg24.de/rssfeed.xml',
+				'/api/rss/https://www.spiegel.de/wirtschaft/unternehmen/index.rss',
+				'/api/rss/https://www.boerse-global.de/feed'
 
 
             ],
