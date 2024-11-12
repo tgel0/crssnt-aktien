@@ -93,7 +93,7 @@
   .page-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0rem;
+    padding: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
 

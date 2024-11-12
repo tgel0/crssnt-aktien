@@ -21,7 +21,7 @@
         padding: 0;  /* removed padding since ThemeToggle has its own */
     }
     
-    main {
+    /* main {
         padding: 1rem;
-    }
+    } */
 </style>
