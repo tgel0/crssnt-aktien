@@ -41,22 +41,22 @@
     border: 1px solid #eaeaea;
     border-radius: 4px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 1rem;
   }
+  /* grid-template-columns: 1fr 1fr 1fr; */
 
   .title {
     font-weight: 600;
   }
 
-  .price {
+  /* .price {
     text-align: right;
   }
 
   .change {
     text-align: right;
-  }
+  } */
 
   .positive {
     color: #16a34a;
@@ -66,7 +66,7 @@
     color: #dc2626;
   }
 
-  @media (max-width: 900px) { 
+  /* @media (max-width: 900px) {  */
   .stock-container {
     grid-template-columns: 1fr;  /* Single column layout */
     min-width: 5rem;
@@ -76,5 +76,5 @@
   .change {
     text-align: left; /* Align text to the left */
   }
-}
+/* } */
 </style>

@@ -104,12 +104,21 @@
     text-align: center;
   }
 
-  .stocks-grid {
+  /* .stocks-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 1rem;
+  } */
+
+  .stocks-grid {
+    display: flex;
+    gap: 2.5rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
   }
+
 
   /* Hide scrollbar for Chrome/Safari/Opera */
   .stocks-grid::-webkit-scrollbar {
