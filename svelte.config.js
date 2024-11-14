@@ -15,6 +15,7 @@ const config = {
             entries: [
                 '/',
 				'/api/stocks/dax',
+				'/api/stocks/mdax',
 				'/api/stocks/nasdaq',
 				'/api/stocks/sp500',
 				'/api/stocks/eurostoxx50',
@@ -24,6 +25,7 @@ const config = {
 				'/api/stocks/eurjpy',
 				'/api/stocks/btceur',
 				'/api/stocks/gold',
+				'/api/stocks/oil',
                 '/api/rss/https://www.finanznachrichten.de/rss-aktien-nachrichten',
 				'/api/rss/https://www.wallstreet-online.de/rss/nachrichten-alle.xml',
 				'/api/rss/https://www.deraktionaer.de/aktionaer-news.rss',

@@ -7,7 +7,7 @@
   // Function to format the timestamp
   function formatBuildTime(isoString) {
     const date = new Date(isoString);
-    return new Intl.DateTimeFormat('en-US', {
+    return new Intl.DateTimeFormat('de-DE', {
       dateStyle: 'medium',
       timeStyle: 'medium'
     }).format(date);
@@ -24,18 +24,20 @@
 
   <div class="stocks-grid">
     <StatCard title="DAX" symbol="dax" />
+    <StatCard title="MDAX" symbol="mdax" />
     <StatCard title="NASDAQ" symbol="nasdaq" />
     <StatCard title="S&P500" symbol="sp500" />
-    <StatCard title="EUROSTX50" symbol="eurostoxx50" />
-    <StatCard title="DOW JONES" symbol="dowjones" />
+    <StatCard title="EURSTX50" symbol="eurostoxx50" />
+    <StatCard title="DOWJONES" symbol="dowjones" />
   </div>
 
   <div class="stocks-grid">
     <StatCard title="EUR/USD" symbol="eurusd" />
+    <StatCard title="BTC(EUR)" symbol="btceur" />
     <StatCard title="EUR/GBP" symbol="eurgbp" />
     <StatCard title="EUR/JPY" symbol="eurjpy" />
-    <StatCard title="EUR/BTC" symbol="btceur" />
     <StatCard title="GOLD(USD)" symbol="gold" />
+    <StatCard title="ÖL(BRENT)" symbol="oil" />
   </div>
 
   <div class="news-grid">
@@ -45,20 +47,21 @@
 
 
     <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml" numberOfItems="7"/>
-    <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
-    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="6"/>
-
     <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="7"/>
     <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="6"/>
+
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen" numberOfItems="6"/>
+    <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
+    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="6"/>
 
     <DataList title="SPIEGEL" feedURL="https://www.spiegel.de/wirtschaft/unternehmen/index.rss" numberOfItems="6"/>
     <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="6"/>
     <DataList title="HANDELSBLATT" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="6"/>
 
     <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="5"/>
-    <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="5"/>
-    <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="7"/>  
+    <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="3"/>
+    <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="5"/>  
+    <!-- <DataList title="HB MORNING BRIEFING" feedURL="https://handelsblatt-morningbriefing.podigee.io/1734-neue-episode" numberOfItems="3"/> -->
 
     <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="12"/>
     <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="16"/>
@@ -83,7 +86,7 @@
   <footer>
     <p class="contact-info">
       <!-- ✉️ <a href="mailto:tomi@crssnt.com">tomi@crssnt.com</a> -->
-      <a href="/legal">Datenschutz und Impressum</a>
+      <a href="/legal">Hinweis, Datenschutz und Impressum</a>
     </p>
   </footer>
 </div>

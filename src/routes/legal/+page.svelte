@@ -10,6 +10,17 @@
     </p>
   </div>
   <div>
+    <h1>Hinweise</h1>
+    <p>
+      Die auf dieser Website angezeigten Nachrichtenlinks und Kurzbeschreibungen stammen 
+      von den jeweiligen Nachrichtenquellen via RSS-Feed. Alle Rechte liegen bei den 
+      ursprünglichen Publizisten. Die Inhalte werden automatisiert aggregiert und 
+      dienen ausschließlich der Information. finanzmarkt.news erhebt keinen Anspruch auf 
+      die Inhalte und distanziert sich von den verlinkten Inhalten. Für die Richtigkeit 
+      und Vollständigkeit der Inhalte wird keine Haftung übernommen.
+    </p>
+  </div>
+  <div>
     <h1>Datenschutz</h1>
     <p>
       Es werden keine personenbezogene Daten erhoben, gespeichert oder
@@ -18,12 +29,12 @@
       Nutzung zu verfolgen. Plausible sammelt nur aggregierte Informationen,
       die es nicht ermöglichen, Besucher der Website zu identifizieren. Plausible
       ist mit der GDPR und der EU ePrivacy Directive konform. Weitere Informationen
-      finden Sie bei Plausbile.<br />
+      finden Sie bei Plausible.<br />
     </p>
-    <h3>
-        <a href="/">Zurück zur Homepage</a>
-    </h3>
   </div>
+  <h3>
+    <a href="/">Zurück zur Homepage</a>
+</h3>
 </div>
 
 <style>
