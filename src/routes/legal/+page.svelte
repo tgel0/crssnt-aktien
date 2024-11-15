@@ -1,3 +1,7 @@
+<script>
+  import { base } from '$app/paths';
+</script>
+
 <div class="page-container">
   <div>
     <h1>Impressum und Kontakt</h1>
@@ -33,7 +37,7 @@
     </p>
   </div>
   <h3>
-    <a href="/">Zurück zur Homepage</a>
+    <a href="{base}/">Zurück zur Homepage</a>
 </h3>
 </div>
 

@@ -3,24 +3,21 @@
   import StatCard from "./components/StatCard/+page.svelte";
 
   export let data;
-  
+
   // Function to format the timestamp
   function formatBuildTime(isoString) {
     const date = new Date(isoString);
-    return new Intl.DateTimeFormat('de-DE', {
-      dateStyle: 'medium',
-      timeStyle: 'medium'
+    return new Intl.DateTimeFormat("de-DE", {
+      dateStyle: "medium",
+      timeStyle: "medium",
     }).format(date);
   }
-
 </script>
 
 <div class="page-container">
-
   <div class="update-info">
     <p>Letzte Aktualisierung: {formatBuildTime(data.buildTime)}</p>
   </div>
-
 
   <div class="stocks-grid">
     <StatCard title="DAX" symbol="dax" />
@@ -45,10 +42,21 @@
     <DataList title="💷 EUR/GBP" feedURL="https://www.ecb.europa.eu/rss/fxref-gbp.html" numberOfItems="1" length="30"/>
     <DataList title="💴 EUR/JPY" feedURL="https://www.ecb.europa.eu/rss/fxref-jpy.html" numberOfItems="1" length="30"/> -->
 
-
-    <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml" numberOfItems="7"/>
-    <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="7"/>
-    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="6"/>
+    <DataList
+      title="TAGESSCHAU"
+      feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml"
+      numberOfItems="7"
+    />
+    <DataList
+      title="FAZ"
+      feedURL="https://www.faz.net/rss/aktuell/finanzen"
+      numberOfItems="7"
+    />
+    <DataList
+      title="SZ"
+      feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"
+      numberOfItems="6"
+    />
 
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen" numberOfItems="6"/>
     <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
@@ -91,87 +99,80 @@
   </footer>
 </div>
 
-
 <style>
   .page-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0rem;
     font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
 
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .stocks-grid {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    /* Hide scrollbar for cleaner look but maintain functionality */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+  }
+
+
+  p {
+    font-size: 0.8em;
+    color: #666;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
   .update-info {
     text-align: center;
   }
 
-  /* .stocks-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 1rem;
-  } */
+  @media (min-width: 900px) {
+    .page-container {
+      padding: 0rem;
+    }
+    .stocks-grid {
+      display: flex;
+      gap: 2.5rem;
+      padding: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 
-  .stocks-grid {
-    display: flex;
-    gap: 2.5rem;
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
   }
 
-
-  /* Hide scrollbar for Chrome/Safari/Opera */
-  .stocks-grid::-webkit-scrollbar {
-      display: none;
+  @media (max-width: 900px) {
+    /* Hide scrollbar for Chrome/Safari/Opera */
+    .stocks-grid::-webkit-scrollbar {
+    display: none;
   }
 
   /* Prevent StatCards from shrinking */
   :global(.stocks-grid > *) {
     flex: 0 0 250px; /* Don't grow, don't shrink, fixed width */
-}
-
-  .news-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2rem;
-    padding: 2rem 0;
   }
 
-  footer {
-    text-align: center; 
-    margin-top: 20px; 
-  }
-
-  p {
-    font-size: 0.8em; 
-    color: #666; 
-  }
-
-  @media (max-width: 900px) {
-    .news-grid {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-  }
-
-  @media (max-width: 900px) {
-  .stocks-grid {
-    margin-left: -1rem;
-    margin-right: -1rem;
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem;
-    /* Hide scrollbar for cleaner look but maintain functionality */
-    scrollbar-width: none;  /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer/Edge */
-  }
-  
   /* Hide scrollbar for Chrome/Safari */
   .stocks-grid::-webkit-scrollbar {
     display: none;
   }
-  
+
   /* Prevent content from wrapping */
   .stocks-grid > :global(*) {
     flex: 0 0 250px; /* Don't grow, don't shrink, fixed width */
@@ -180,13 +181,9 @@
   .stocks-grid > :global(*:first-child) {
     margin-left: 0;
   }
-  
+
   .stocks-grid > :global(*:last-child) {
     margin-right: 0;
   }
-  .page-container {
-    padding: 0;
-  }
 }
-
 </style>

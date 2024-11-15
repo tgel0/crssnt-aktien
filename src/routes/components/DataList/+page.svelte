@@ -45,7 +45,7 @@
   .list-container {
     max-width: 800px;
     margin: 0;
-    padding: 1rem;
+    padding: 0rem;
   }
 
   h2 {

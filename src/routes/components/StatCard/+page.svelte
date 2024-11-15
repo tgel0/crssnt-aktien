@@ -37,12 +37,15 @@
 
 <style>
   .stock-container {
+    display: grid;
+    grid-template-columns: 1fr; 
     padding: 1rem;
     border: 1px solid #eaeaea;
     border-radius: 4px;
-    display: grid;
     align-items: center;
     gap: 1rem;
+    min-width: 5rem;
+    max-width: 1rem; 
   }
   /* grid-template-columns: 1fr 1fr 1fr; */
 
@@ -50,13 +53,10 @@
     font-weight: 600;
   }
 
-  /* .price {
-    text-align: right;
-  }
-
+  .price, 
   .change {
-    text-align: right;
-  } */
+    text-align: left; /* Align text to the left */
+  }
 
   .positive {
     color: #16a34a;
@@ -65,16 +65,4 @@
   .negative {
     color: #dc2626;
   }
-
-  /* @media (max-width: 900px) {  */
-  .stock-container {
-    grid-template-columns: 1fr;  /* Single column layout */
-    min-width: 5rem;
-    max-width: 1rem;  /* Fixed width for mobile */
-  }
-  .price, 
-  .change {
-    text-align: left; /* Align text to the left */
-  }
-/* } */
 </style>
