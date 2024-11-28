@@ -50,7 +50,10 @@ const config = {
 				'/api/rss/https://www.it-times.de/tag/it-news/rss.xml',
 				'/api/rss/https://www.ntg24.de/rssfeed.xml',
 				'/api/rss/https://www.spiegel.de/wirtschaft/unternehmen/index.rss',
-				'/api/rss/https://www.boerse-global.de/feed'
+				'/api/rss/https://www.boerse-global.de/feed',
+				'/api/rss/https://www.businessinsider.de/wirtschaft/feed',
+				'/api/rss/https://financefwd.com/de/feed',
+				'/api/rss/https://www.xetra.com/xetra-de/newsroom/80642!listFeed'
 
 
             ],

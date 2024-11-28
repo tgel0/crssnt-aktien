@@ -19,7 +19,7 @@
     <p>Letzte Aktualisierung: {formatBuildTime(data.buildTime)}</p>
   </div>
 
-  <div class="stocks-grid">
+  <!-- <div class="stocks-grid">
     <StatCard title="DAX" symbol="dax" />
     <StatCard title="MDAX" symbol="mdax" />
     <StatCard title="NASDAQ" symbol="nasdaq" />
@@ -35,7 +35,7 @@
     <StatCard title="EUR/JPY" symbol="eurjpy" />
     <StatCard title="GOLD(USD)" symbol="gold" />
     <StatCard title="ÖL(BRENT)" symbol="oil" />
-  </div>
+  </div> -->
 
   <div class="news-grid">
     <!-- <DataList title="💵 EUR/USD" feedURL="https://www.ecb.europa.eu/rss/fxref-usd.html" numberOfItems="1" length="30"/>
@@ -59,41 +59,46 @@
     />
 
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen" numberOfItems="6"/>
-    <DataList title="MANAGER MAGAZIN" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
+    <DataList title="MANAGER" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
     <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="6"/>
 
     <DataList title="SPIEGEL" feedURL="https://www.spiegel.de/wirtschaft/unternehmen/index.rss" numberOfItems="6"/>
     <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="6"/>
-    <DataList title="HANDELSBLATT" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="6"/>
+    <DataList title="HB" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="6"/>
+
+    <DataList title="BUSINESS INSIDER" feedURL="https://www.businessinsider.de/wirtschaft/feed" numberOfItems="6"/>
+    <DataList title="FINANCE FWD" feedURL="https://financefwd.com/de/feed" numberOfItems="6"/>
+    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" numberOfItems="6" />
 
     <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="5"/>
     <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="3"/>
     <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="5"/>  
-    <!-- <DataList title="HB MORNING BRIEFING" feedURL="https://handelsblatt-morningbriefing.podigee.io/1734-neue-episode" numberOfItems="3"/> -->
 
-    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="12"/>
-    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="16"/>
-    <DataList title="DER AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>
+     <!--<DataList title="MARKUS KOCH WALL STREET" feedURL="https://www.youtube.com/feeds/videos.xml?channel_id=UCyCBf6asf89aQJaSXuAuTsg" numberOfItems="3"/>
+    <DataList title="HB MORNING BRIEFING" feedURL="https://handelsblatt-morningbriefing.podigee.io/1734-neue-episode" numberOfItems="3"/> -->
 
-    <DataList title="BÖRSE GLOBAL" feedURL="https://www.boerse-global.de/feed" />
-    <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
-    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" numberOfItems="9" />
+    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="9"/>
+    <DataList title="FINANZNACHRICHTEN.DE/ANALYSEN" feedURL="https://www.finanznachrichten.de/rss-aktien-analysen" numberOfItems="11"/>
+    <DataList title="AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss"/>
 
     <DataList title="R/AKTIEN" feedURL="https://www.reddit.com/r/Aktien/new.rss"/>
-    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml" numberOfItems="8"/>
+    <DataList title="BÖRSE-GLOBAL" feedURL="https://www.boerse-global.de/feed" numberOfItems="8"/>
+    <!-- <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/> -->
+    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml" numberOfItems="6"/>
+
     <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
-        
     <DataList title="IT TIMES" feedURL="https://www.it-times.de/tag/it-news/rss.xml"/>
     <DataList title="NTG24" feedURL="https://www.ntg24.de/rssfeed.xml" numberOfItems="6"/>
-    <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
 
+    <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
     <!-- <DataList title="FINANZEN.NET" feedURL="https://www.finanzen.net/rss/news"/> -->
-    <!-- <DataList title="XETRA" feedURL="https://www.xetra.com/xetra-de/newsroom/80642!listFeed"/> -->
+    <DataList title="XETRA" feedURL="https://www.xetra.com/xetra-de/newsroom/80642!listFeed"/>
   </div>
 
   <footer>
     <p class="contact-info">
-      <!-- ✉️ <a href="mailto:tomi@crssnt.com">tomi@crssnt.com</a> -->
+      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1et2ZYu-dtYwHSsWHN3b5iPa7sw504pFUULRseB5o1og/edit?usp=sharing">Börsenkalender 2025</a>
+      •
       <a href="/legal">Hinweis, Datenschutz und Impressum</a>
     </p>
   </footer>
