@@ -4,7 +4,7 @@
   export let data = [];
   export let title = "";
   export let feedURL = "";
-  export let numberOfItems = 10
+  export let numberOfItems = 6
   export let length = 90;
 
   const fetchDataList = async () => {

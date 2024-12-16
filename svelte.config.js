@@ -53,7 +53,9 @@ const config = {
 				'/api/rss/https://www.boerse-global.de/feed',
 				'/api/rss/https://www.businessinsider.de/wirtschaft/feed',
 				'/api/rss/https://financefwd.com/de/feed',
-				'/api/rss/https://www.xetra.com/xetra-de/newsroom/80642!listFeed'
+				'/api/rss/https://www.xetra.com/xetra-de/newsroom/80642!listFeed',
+				'/api/rss/https://www.finanzen.net/rss/analysen',
+				'/api/rss/https://www.finanzen.net/rss/news'
 
 
             ],
