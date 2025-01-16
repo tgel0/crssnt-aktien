@@ -1,14 +1,21 @@
 export const prerender = true;
 
-export async function GET({ params, url }) {
+export async function GET({ request, url }) {
     
 
     // const feedUrl = params.feed;
-    const feedUrl = url.searchParams.get('feed');
+    const fullUrl = request.url;
+    const feedUrlStartIndex = fullUrl.indexOf('/api/rss/') + '/api/rss/'.length;
+    const feedUrl = fullUrl.substring(feedUrlStartIndex);
+    // console.log("fullUrl:", fullUrl)
+
+    // const feedUrl = url.searchParams.get('feed');
     // const numberOfItems = url.searchParams.get('numberOfItems');
     const numberOfItems = "20"
     
     try {
+
+      console.log(`https://us-central1-crssnt-test-1603789358418.cloudfunctions.net/crssntFeedParser/rss/${feedUrl}`)
 
       const response = await fetch(`https://us-central1-crssnt-test-1603789358418.cloudfunctions.net/crssntFeedParser/rss/${feedUrl}`);
       
