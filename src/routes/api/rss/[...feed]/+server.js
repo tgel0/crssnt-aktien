@@ -2,12 +2,15 @@ export const prerender = true;
 
 export async function GET({ params, url }) {
     
-    const feedUrl = params.feed;
+
+    // const feedUrl = params.feed;
+    const feedUrl = url.searchParams.get('feed');
     // const numberOfItems = url.searchParams.get('numberOfItems');
     const numberOfItems = "20"
     
     try {
-      const response = await fetch(`https://us-central1-crssnt-test-1603789358418.cloudfunctions.net/crssntFeedParser/rss/${feedUrl}?numberOfItems=${numberOfItems}`);
+
+      const response = await fetch(`https://us-central1-crssnt-test-1603789358418.cloudfunctions.net/crssntFeedParser/rss/${feedUrl}`);
       
       const data = await response.json();
       
