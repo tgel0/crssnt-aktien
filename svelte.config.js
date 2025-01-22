@@ -28,6 +28,8 @@ const config = {
 				'/api/stocks/oil',
 				'/api/stocks/nikkei',
 				'/api/stocks/etheur',
+				'/api/stocks/ftse',
+				'/api/stocks/soleur',
                 '/api/rss/https://www.finanznachrichten.de/rss-aktien-nachrichten',
 				'/api/rss/https://www.wallstreet-online.de/rss/nachrichten-alle.xml',
 				'/api/rss/https://www.deraktionaer.de/aktionaer-news.rss',
@@ -58,9 +60,9 @@ const config = {
 				'/api/rss/https://www.xetra.com/xetra-de/newsroom/80642!listFeed',
 				'/api/rss/https://www.finanzen.net/rss/analysen',
 				'/api/rss/https://www.finanzen.net/rss/news',
-				'/api/rss/https://www.youtube.com/feeds/videos.xml?channel_id=UCyCBf6asf89aQJaSXuAuTsg',
 				'/api/rss/https://handelsblatt-morningbriefing.podigee.io/feed/mp3',
-				'/api/rss/https://podcastfuerdeutschland.podigee.io/feed/mp3'
+				'/api/rss/https://podcastfuerdeutschland.podigee.io/feed/mp3',
+				'/api/yt/UCyCBf6asf89aQJaSXuAuTsg',
 
 
             ],

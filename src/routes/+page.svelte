@@ -1,5 +1,6 @@
 <script>
   import DataList from "./components/DataList/+page.svelte";
+  import MediaList from "./components/MediaList/+page.svelte";
   import StatCard from "./components/StatCard/+page.svelte";
 
   export let data;
@@ -26,6 +27,7 @@
     <StatCard title="S&P500" symbol="sp500" />
     <StatCard title="EURSTX50" symbol="eurostoxx50" />
     <StatCard title="DOWJONES" symbol="dowjones" />
+    <StatCard title="FTSE100" symbol="ftse" />
     <StatCard title="NIKKEI" symbol="nikkei" />
   </div>
 
@@ -33,6 +35,7 @@
     <StatCard title="EUR/USD" symbol="eurusd" />
     <StatCard title="BTC(EUR)" symbol="btceur" />
     <StatCard title="ETH(EUR)" symbol="etheur" />
+    <StatCard title="SOL(EUR)" symbol="soleur" />
     <StatCard title="EUR/GBP" symbol="eurgbp" />
     <StatCard title="EUR/JPY" symbol="eurjpy" />
     <StatCard title="GOLD(USD)" symbol="gold" />
@@ -58,12 +61,12 @@
     <DataList
       title="SZ"
       feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft"
-      numberOfItems="6"
+      numberOfItems="4"
     />
 
     <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen" numberOfItems="5"/>
     <DataList title="MANAGER" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="5"/>
-    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="6"/>
+    <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="5"/>
 
     <DataList title="SPIEGEL" feedURL="https://www.spiegel.de/wirtschaft/unternehmen/index.rss" numberOfItems="6"/>
     <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="6"/>
@@ -75,8 +78,7 @@
 
     <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="5"/>
     <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="4"/>
-    <DataList title="🎙HB MORNING BRIEFING" feedURL="https://handelsblatt-morningbriefing.podigee.io/feed/mp3" numberOfItems="5"/>
-    <!-- <DataList title="▶️ MARKUS KOCH WALL STREET" feedURL="https://www.youtube.com/feeds/videos.xml?channel_id=UCyCBf6asf89aQJaSXuAuTsg" /> -->
+    <MediaList title="▶️ MARKUS KOCH WALL STREET" channelId="UCyCBf6asf89aQJaSXuAuTsg" />
 
     <DataList title="IT TIMES" feedURL="https://www.it-times.de/tag/it-news/rss.xml" numberOfItems="5"/>
     <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" numberOfItems="5" />
@@ -92,12 +94,13 @@
 
     <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="5"/>
     <DataList title="🎙FAZ PODCAST FÜR D" feedURL="https://podcastfuerdeutschland.podigee.io/feed/mp3" numberOfItems="4"/>
+    <DataList title="🎙HB MORNING BRIEFING" feedURL="https://handelsblatt-morningbriefing.podigee.io/feed/mp3" numberOfItems="5"/>
 
     <!-- <DataList title="BÖRSE-GLOBAL" feedURL="https://www.boerse-global.de/feed"/> -->
     <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
     <DataList title="NTG24" feedURL="https://www.ntg24.de/rssfeed.xml" numberOfItems="4"/>
-
     <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>
+    
     <DataList title="XETRA" feedURL="https://www.xetra.com/xetra-de/newsroom/80642!listFeed" numberOfItems="3"/>
 
     <!-- <DataList title="GOOGLE NEWS" feedURL="https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtUmxHZ0pFUlNnQVAB?hl=de&gl=DE&ceid=DE%3Ade"/> -->
