@@ -16,6 +16,7 @@ const config = {
                 '/',
 				'/api/stocks/dax',
 				'/api/stocks/mdax',
+				'/api/stocks/sdax',
 				'/api/stocks/nasdaq',
 				'/api/stocks/sp500',
 				'/api/stocks/eurostoxx50',
@@ -26,6 +27,7 @@ const config = {
 				'/api/stocks/btceur',
 				'/api/stocks/gold',
 				'/api/stocks/oil',
+				'/api/stocks/natgas',
 				'/api/stocks/nikkei',
 				'/api/stocks/etheur',
 				'/api/stocks/ftse',
@@ -62,6 +64,7 @@ const config = {
 				'/api/rss/https://www.finanzen.net/rss/news',
 				'/api/rss/https://handelsblatt-morningbriefing.podigee.io/feed/mp3',
 				'/api/rss/https://podcastfuerdeutschland.podigee.io/feed/mp3',
+				'/api/rss/https://finanzmarktwelt.de/feed',
 				'/api/yt/UCyCBf6asf89aQJaSXuAuTsg',
 
 

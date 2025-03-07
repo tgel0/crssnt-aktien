@@ -1,10 +1,10 @@
 <script>
-    import ThemeToggle from './components/ThemeToggle/+page.svelte';
+    import ThemeCopyToggle from './components/ThemeCopyToggle/+page.svelte';
 </script>
 
 <div class="app">
     <header>
-        <ThemeToggle />
+        <ThemeCopyToggle />
     </header>
 
     <main>

@@ -2,8 +2,8 @@ name: Deploy to Firebase on schedule
 
 on:
   schedule:
-    # Runs every hour from 8 AM to 8 PM (8:00, 9:00, 10:00, ..., 19:00, 20:00) on weekdays
-    - cron: '0 7-20 * * 1-5'
+    # Runs every hour from 7 AM to 8 PM (7:00, 9:00, 10:00, ..., 19:00, 20:00) on weekdays
+    - cron: '0 6-20 * * 1-5'
   workflow_dispatch:
 
 jobs:
