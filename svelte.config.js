@@ -66,8 +66,7 @@ const config = {
 				'/api/rss/https://podcastfuerdeutschland.podigee.io/feed/mp3',
 				'/api/rss/https://finanzmarktwelt.de/feed',
 				'/api/yt/UCyCBf6asf89aQJaSXuAuTsg',
-
-
+				'/api/yt/UCAJhnhPA3E3I_JzlcDruumg',
             ],
 			handleMissingId: 'ignore',
 			handleHttpError: ({ path, referrer, message }) => {

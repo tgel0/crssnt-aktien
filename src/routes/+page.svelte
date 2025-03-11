@@ -53,7 +53,7 @@
 
 
     <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml" numberOfItems="5"/>
-    <DataList title="HB" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="5"/>
+    <DataList title="HB" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="4"/>
     <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="4"/>
 
     <DataList title="FAZ"feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="5"/>
@@ -66,35 +66,35 @@
     </div>
 
     <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="5"/>
-    <DataList title="SPIEGEL" feedURL="https://www.spiegel.de/wirtschaft/unternehmen/index.rss" numberOfItems="6"/>
-    <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="6"/>
+    <DataList title="SPIEGEL" feedURL="https://www.spiegel.de/wirtschaft/unternehmen/index.rss" numberOfItems="5"/>
+    <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="5"/>
 
-    <DataList title="FINANZEN.NET/NEWS" feedURL="https://www.finanzen.net/rss/news" numberOfItems="5"/>
+
     <DataList title="BUSINESS INSIDER" feedURL="https://www.businessinsider.de/wirtschaft/feed" numberOfItems="5"/>
-    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml" numberOfItems="5"/>    
+    <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml" numberOfItems="6"/>    
+    <DataList title="AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss" numberOfItems="6" />
 
-    <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="5"/>
-    <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="4"/>
-    <MediaList title="▶️ MARKUS KOCH WALL STREET" channelId="UCyCBf6asf89aQJaSXuAuTsg" numberOfItems="4"/>
+    <DataList title="🎙ALLES AUF AKTIEN" feedURL="https://allesaufaktien.podigee.io/feed/mp3" numberOfItems="3"/>
+    <DataList title="🎙OHNE AKTIEN WIRD SCHWER" feedURL="https://feeds.megaphone.fm/PDS3666998460" numberOfItems="3"/>
+    <DataList title="🎙HB MORNING BRIEFING" feedURL="https://handelsblatt-morningbriefing.podigee.io/feed/mp3" numberOfItems="3"/>
+    
+    <DataList title="🎙FAZ PODCAST FÜR D" feedURL="https://podcastfuerdeutschland.podigee.io/feed/mp3" numberOfItems="3"/>
+    <MediaList title="▶️ MARKUS KOCH WALL STREET" channelId="UCyCBf6asf89aQJaSXuAuTsg" numberOfItems="3"/>
+    <MediaList title="▶️ STOCK3" channelId="UCAJhnhPA3E3I_JzlcDruumg" numberOfItems="3"/>
 
-    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="7"/>
+    <DataList title="FINANZEN.NET/NEWS" feedURL="https://www.finanzen.net/rss/news" numberOfItems="9"/>
+    <DataList title="FINANZNACHRICHTEN.DE/NEWS" feedURL="https://www.finanznachrichten.de/rss-aktien-nachrichten" numberOfItems="9"/>
     <DataList title="R/AKTIEN" feedURL="https://www.reddit.com/r/Aktien/new.rss" numberOfItems="10"/>
-    <DataList title="AKTIONÄR" feedURL="https://www.deraktionaer.de/aktionaer-news.rss" numberOfItems="9" />
-
-    <DataList title="IT TIMES" feedURL="https://www.it-times.de/tag/it-news/rss.xml" numberOfItems="5"/>
-    <DataList title="FINANCE FWD" feedURL="https://financefwd.com/de/feed" numberOfItems="5"/>
-    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" numberOfItems="5" />
-
 
     <DataList title="FINANZMARKTWELT" feedURL="https://finanzmarktwelt.de/feed" numberOfItems="5" />
+    <DataList title="IT TIMES" feedURL="https://www.it-times.de/tag/it-news/rss.xml" numberOfItems="5"/>
+    <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" numberOfItems="5" />
+
+    <DataList title="FINANCE FWD" feedURL="https://financefwd.com/de/feed" numberOfItems="5"/>
     <DataList title="NTG24" feedURL="https://www.ntg24.de/rssfeed.xml" numberOfItems="4"/>
     <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
 
-    <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="5"/>
-    <DataList title="🎙FAZ PODCAST FÜR D" feedURL="https://podcastfuerdeutschland.podigee.io/feed/mp3" numberOfItems="4"/>
-    <DataList title="🎙HB MORNING BRIEFING" feedURL="https://handelsblatt-morningbriefing.podigee.io/feed/mp3" numberOfItems="5"/>
-
-
+    <!-- <DataList title="🎙MARKTGEFLÜSTER" feedURL="https://feeds.megaphone.fm/FGH8365603623" numberOfItems="5"/> -->
     <DataList title="BOERSIA.DE" feedURL="https://www.boersia.de/feed/atom"/>
     <DataList title="BÖRSE FRANKFURT" feedURL="https://api.boerse-frankfurt.de/v1/feeds/news.rss"/>    
     <DataList title="XETRA" feedURL="https://www.xetra.com/xetra-de/newsroom/80642!listFeed" numberOfItems="3"/>
