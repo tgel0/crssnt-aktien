@@ -16,9 +16,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+
+      - name: Uninstall Firebase CLI
+        run: npm uninstall -g firebase-tools
       
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools
+        run: npm install -g firebase-tools@13.6.0  # workaround fix
       
       - name: Install project dependencies
         run: npm ci
