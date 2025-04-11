@@ -53,12 +53,12 @@
 
 
     <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml" numberOfItems="7"/>
-    <DataList title="HB" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="5"/>
-    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="5"/>
+    <DataList title="HB" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="6"/>
+    <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="6"/>
 
     <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="6"/>
-    <DataList title="WIWO" feedURL="https://crssnt.com/v1/sheet/rss/?id=1e7qcbIYyU6QCN8l9t4FWqgKvm1leEZy3l2_Bql-y74c" numberOfItems="5"/>
-    <DataList title="MANAGER" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="5"/>
+    <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/unternehmen" numberOfItems="7"/>
+    <DataList title="MANAGER" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="6"/>
 
     <div class="full-row">
       <ShortList title="FINANZEN.NET/ANALYSEN" feedURL="https://www.finanzen.net/rss/analysen" numberOfItems="20"/>
