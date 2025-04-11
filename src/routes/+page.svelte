@@ -57,7 +57,7 @@
     <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="5"/>
 
     <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="6"/>
-    <DataList title="WIWO" feedURL="https://www.wiwo.de/contentexport/feed/rss/finanzen" numberOfItems="5"/>
+    <DataList title="WIWO" feedURL="https://crssnt.com/v1/sheet/rss/?id=1e7qcbIYyU6QCN8l9t4FWqgKvm1leEZy3l2_Bql-y74c" numberOfItems="5"/>
     <DataList title="MANAGER" feedURL="https://www.manager-magazin.de/news/index.rss" numberOfItems="5"/>
 
     <div class="full-row">
@@ -68,7 +68,6 @@
     <DataList title="CAPITAL" feedURL="https://www.capital.de/feed/standard" numberOfItems="6"/>
     <DataList title="SPIEGEL" feedURL="https://www.spiegel.de/wirtschaft/unternehmen/index.rss" numberOfItems="6"/>
     <DataList title="NTV" feedURL="https://www.n-tv.de/wirtschaft/rss" numberOfItems="6"/>
-
 
     <DataList title="BUSINESS INSIDER" feedURL="https://www.businessinsider.de/wirtschaft/feed" numberOfItems="6"/>
     <DataList title="WALLSTREET ONLINE" feedURL="https://www.wallstreet-online.de/rss/nachrichten-alle.xml" numberOfItems="6"/>    
@@ -91,6 +90,7 @@
     <DataList title="INVESTING.COM" feedURL="https://de.investing.com/rss/news.rss" numberOfItems="6" />
 
     <DataList title="FINANCE FWD" feedURL="https://financefwd.com/de/feed" numberOfItems="5"/>
+    <DataList title="HEISE" feedURL="https://www.heise.de/rss/heise-Rubrik-Wirtschaft.rdf" numberOfItems="5"/>    
     <!-- <DataList title="NTG24" feedURL="https://www.ntg24.de/rssfeed.xml" numberOfItems="4"/> -->
     <DataList title="BÖRSENNEWS.DE" feedURL="https://www.boersennews.de/service/news.rss"/>
 

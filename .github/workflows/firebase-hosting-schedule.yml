@@ -21,7 +21,7 @@ jobs:
         run: npm uninstall -g firebase-tools
       
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools@13.6.0  # workaround fix
+        run: npm install -g firebase-tools
       
       - name: Install project dependencies
         run: npm ci
