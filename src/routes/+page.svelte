@@ -21,7 +21,7 @@
     <p>Letzte Aktualisierung: {formatBuildTime(data.buildTime)}</p>
   </div>
 
-  <div class="stocks-grid">
+  <!-- <div class="stocks-grid">
     <StatCard title="DAX" symbol="dax" />
     <StatCard title="MDAX" symbol="mdax" />
     <StatCard title="SDAX" symbol="sdax" />
@@ -31,9 +31,9 @@
     <StatCard title="DOWJONES" symbol="dowjones" />
     <StatCard title="FTSE100" symbol="ftse" />
     <StatCard title="NIKKEI" symbol="nikkei" />
-  </div>
+  </div> -->
 
-  <div class="stocks-grid">
+  <!-- <div class="stocks-grid">
     <StatCard title="EUR/USD" symbol="eurusd" />
     <StatCard title="EUR/GBP" symbol="eurgbp" />
     <StatCard title="EUR/JPY" symbol="eurjpy" />
@@ -43,7 +43,7 @@
     <StatCard title="GOLD" symbol="gold" />
     <StatCard title="ERDGAS" symbol="natgas" />
     <StatCard title="BRENT" symbol="oil" />    
-  </div>
+  </div> -->
 
   <div class="news-grid">
     <!-- <DataList title="💵 EUR/USD" feedURL="https://www.ecb.europa.eu/rss/fxref-usd.html" numberOfItems="1" length="30"/>
