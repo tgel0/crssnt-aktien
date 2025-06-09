@@ -40,7 +40,7 @@ const config = {
 				'/api/rss/https://www.finanznachrichten.de/rss-aktien-analysen',
 				'/api/rss/https://www.manager-magazin.de/news/index.rss',
 				'/api/rss/https://www.capital.de/feed/standard',
-				'/api/rss/https://www.handelsblatt.com/contentexport/feed/finanzen',
+				'/api/rss/https://www.handelsblatt.com/contentexport/feed/unternehmen',
 				'/api/rss/https://allesaufaktien.podigee.io/feed/mp3',
 				'/api/rss/https://feeds.megaphone.fm/PDS3666998460',
 				'/api/rss/https://www.reddit.com/r/Aktien/new.rss',

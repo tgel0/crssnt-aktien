@@ -21,7 +21,7 @@
     <p>Letzte Aktualisierung: {formatBuildTime(data.buildTime)}</p>
   </div>
 
-  <!-- <div class="stocks-grid">
+  <div class="stocks-grid">
     <StatCard title="DAX" symbol="dax" />
     <StatCard title="MDAX" symbol="mdax" />
     <StatCard title="SDAX" symbol="sdax" />
@@ -31,9 +31,9 @@
     <StatCard title="DOWJONES" symbol="dowjones" />
     <StatCard title="FTSE100" symbol="ftse" />
     <StatCard title="NIKKEI" symbol="nikkei" />
-  </div> -->
+  </div>
 
-  <!-- <div class="stocks-grid">
+  <div class="stocks-grid">
     <StatCard title="EUR/USD" symbol="eurusd" />
     <StatCard title="EUR/GBP" symbol="eurgbp" />
     <StatCard title="EUR/JPY" symbol="eurjpy" />
@@ -43,7 +43,7 @@
     <StatCard title="GOLD" symbol="gold" />
     <StatCard title="ERDGAS" symbol="natgas" />
     <StatCard title="BRENT" symbol="oil" />    
-  </div> -->
+  </div>
 
   <div class="news-grid">
     <!-- <DataList title="💵 EUR/USD" feedURL="https://www.ecb.europa.eu/rss/fxref-usd.html" numberOfItems="1" length="30"/>
@@ -51,9 +51,9 @@
     <DataList title="💴 EUR/JPY" feedURL="https://www.ecb.europa.eu/rss/fxref-jpy.html" numberOfItems="1" length="30"/> -->
 
 
-
     <DataList title="TAGESSCHAU" feedURL="https://www.tagesschau.de/wirtschaft/index~rss2.xml" numberOfItems="7"/>
-    <DataList title="HB" feedURL="https://www.handelsblatt.com/contentexport/feed/finanzen" numberOfItems="6"/>
+    <!-- <DataList title="HB" feedURL="https://crssnt.com/v1/feed/atom/?url=https://www.handelsblatt.com/contentexport/feed/finanzen&url=https://www.handelsblatt.com/contentexport/feed/unternehmen" numberOfItems="6"/> -->
+    <DataList title="HB" feedURL="https://www.handelsblatt.com/contentexport/feed/unternehmen" numberOfItems="6"/>
     <DataList title="SZ" feedURL="https://rss.sueddeutsche.de/rss/Wirtschaft" numberOfItems="6"/>
 
     <DataList title="FAZ" feedURL="https://www.faz.net/rss/aktuell/finanzen" numberOfItems="6"/>
@@ -101,6 +101,8 @@
 
     <!-- <DataList title="BÖRSE-GLOBAL" feedURL="https://www.boerse-global.de/feed"/> -->
     <!-- <DataList title="GOOGLE NEWS" feedURL="https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtUmxHZ0pFUlNnQVAB?hl=de&gl=DE&ceid=DE%3Ade"/> -->
+
+  
   </div>
 
   <footer>
