@@ -1,7 +1,4 @@
 {
-  "functions": {
-    "runtime": "nodejs20"
-  },
   "hosting": {
     "site": "aktien-crssnt",
     "source": ".",
